@@ -1,3 +1,0 @@
-(library
- (name mess)
- (libraries str unix curses))
