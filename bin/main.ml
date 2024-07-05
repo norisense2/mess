@@ -166,10 +166,7 @@ let () =
         | "^[" ->
             main first_line No
 
-        | key ->
-            addstr key |> ignore;
-            refresh () |> ignore;
-            Unix.sleep 1;
+        | _ ->
             main first_line is_find_mode
     in
     main 0 No;
